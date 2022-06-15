@@ -1,0 +1,104 @@
+<!-- Vamos a crear un sitio web para “shopTravel”, donde permita mostrar la información de la
+empresa, se le solicitará:
+- Construir estructura HTML utilizando etiquetas semánticas, mínimo 3, como
+header, section, footer, nav o article.
+- Crear un archivo Css.
+- Agregar imágenes al proyecto.
+- La página debe tener títulos y subtítulos para las secciones.
+- La página debe tener una barra de navegación fija en el borde superior que ocupe
+el 100% del ancho.
+- Todas las páginas deben contener un footer que incluya íconos de redes sociales.
+- Realizar un banner, que será una imagen que ocupe el 100% del ancho como una
+imagen de fondo y sobre la imagen colocar : “ Bienvenidos a shopTravel “
+- Vamos a tener una section de productos. Se deberá ver con una imagen y una
+descripción, seran 3 productos distribuidos horizontalmente , un producto al lado
+del otro. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <a class="logo" href="index.html">shopTravel</a>
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="index.html" class="nav__link">Inicio</a>
+            </li>
+            <li class="nav__item">
+                <a href="#products" class="nav__link">Productos</a>
+            </li>
+            <li class="nav__item">
+                <a href="#redes" class="nav__link">RRSS</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1 class="header__title">Bienvenidos a shopTravel</h1>
+    </header>
+    <main class="main">
+
+
+
+        <section class="products">
+            <h2 id="products" class="products__title">Productos</h2>
+
+            <div class="card">
+                <div class="card__contenedor">
+                    <img src="img/argentina.jpg" alt="" class="card__img">
+                    <p class="card__img-hover">Visita Buenos Aires</p>
+                </div>
+                <h3 class="card__title">Argentina</h3>
+                <p class="card_description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat quos ducimus tempora aperiam
+                    nemo nam accusantium! Ipsa dolor odio reiciendis dolore animi necessitatibus
+                </p>
+            </div>
+
+            <div class="card">
+
+                <div class="card__contenedor">
+                    <img src="img/colombia.jpg" alt="" class="card__img">
+                    <div class="card__img-hover">Visita Bogota</div>
+                </div>
+                <h3 class="card__title">Colombia</h3>
+                <p class="card_description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat quos ducimus tempora aperiam
+                    nemo nam accusantium! Ipsa dolor odio reiciendis dolore animi necessitatibus
+                </p>
+            </div>
+            <div class="card">
+                <div class="card__contenedor">
+                    <img src="img/chile.jpg" alt="" class="card__img">
+                    <p class="card__img-hover">Visita Santiago de Chile</p>
+                </div>
+                <h3 class="card__title">Chile</h3>
+                <p class="card_description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat quos ducimus tempora aperiam
+                    nemo nam accusantium! Ipsa dolor odio reiciendis dolore animi necessitatibus
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+    <footer id="redes" class="footer">
+        <p class="footer__text">
+            Diseñado por César Mongez
+        </p>
+        <div class="footer__img">
+            <a href="#"><img src="img/facebook.png" alt="" class="footer__icons"></a>
+            <a href="#"><img src="img/twitter.png" alt="" class="footer__icons"></a>
+            <a href="#"><img src="img/instagram.png" alt="" class="footer__icons"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
